@@ -9,12 +9,12 @@ An attempt to implements j.u.c whereby other alogrithms
 - JDK 6 +
 
 ## Installation
-> git clone https://github.com/coderplay/concurrent.git
-> mvn clean package
+    git clone https://github.com/coderplay/concurrent.git
+    mvn clean package
 
 ## Examples
 ### FastArrayBlockingQueue
-'''java
+```java
     final int BUFFER_SIZE = 1024 * 8;
     final long ITERATIONS = 1000L * 1000L * 10L;
     final BlockingQueue<Long> queue =
@@ -47,5 +47,5 @@ An attempt to implements j.u.c whereby other alogrithms
 
     new Thread(consumer).start();
     new Thread(producer).start();
-'''
+```
 
